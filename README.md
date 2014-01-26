@@ -15,7 +15,7 @@ L.china.provider('TianDiTu.Normal').addTo(map);
 ```Javascript
 var map = L.map('map', {
     center: [31.59, 120.29],
-    zoomLevel: 12
+    zoom: 12
 });
 
 L.china.provider('TianDiTu.Normal',{maxZoom:18,minZoom:2}).addTo(map);
