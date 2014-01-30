@@ -4,10 +4,10 @@ An extension to [Leaflet](http://leafletjs.com/) that contains configurations fo
 
 ## Usage
 
-Leaflet-ChineseTmsProviders [providers](#providers) are refered to with a provider[.<variant>]-string. Let's say you want to add the nice `Normal` base layers from `www.tianditu.com` to your map, you pass `TianDiTu.Normal` to the `L.china.provider`-constructor, which will return a `L.TileLayer` instance for TianDiTu Normal tile layer.
+Leaflet-ChineseTmsProviders [providers](#providers) are refered to with a provider[.<variant>.<type>]-string. Let's say you want to add the nice `Normal.Map` base layers from `www.tianditu.com` to your map, you pass `TianDiTu.Normal.Map` to the `L.tileLayer.chinaProvider`-constructor, which will return a `L.TileLayer` instance for TianDiTu Normal tile layer.
 ```Javascript
-//add TianDiTu Normal Layer to map.
-L.china.provider('TianDiTu.Normal').addTo(map);
+//add TianDiTu Normal Map Layer to map.
+L.tileLayer.chinaProvider('TianDiTu.Normal.Map').addTo(map);
 ```
 
 ## Example
@@ -18,8 +18,8 @@ var map = L.map('map', {
     zoom: 12
 });
 
-L.china.provider('TianDiTu.Normal',{maxZoom:18,minZoom:2}).addTo(map);
-L.china.provider('TianDiTu.Satellite',{maxZoom:18,minZoom:2}).addTo(map);
+L.tileLayer.chinaProvider('TianDiTu.Normal.Map',{maxZoom:18,minZoom:5}).addTo(map);
+L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion',{maxZoom:18,minZoom:5}).addTo(map);
 
 ```
 There are more examples at the examples folder like below.
@@ -35,8 +35,10 @@ All maps use Coordinate Reference Systems (CRS), which are EPSG:4326. Therefore,
 
 Current options suitable for tile layers are:
 * TianDiTu
-    * TianDiTu.Normal
+    * TianDiTu.Normal.Map
+    * TianDiTu.Normal.Annotion
     * TianDiTu.Satellite
+    * TianDiTu.Satellite.Annotion
 * MapABC
     * MapABC.Normal
     * MapABC.Satellite
