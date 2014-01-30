@@ -35,12 +35,9 @@ L.TileLayer.ChinaProvider.providers ={
 
     MapABC:{
         Normal:{
-            Map:''
+            Map:'http://emap{s}.mapabc.com/mapabc/maptile?&x={x}&y={y}&z={z}'
         },
-        Satellite:{
-            Map:''
-        },
-        Subdomains:[]
+        Subdomains:["0","1", "2", "3"]
     },
     
     GaoDe:{
