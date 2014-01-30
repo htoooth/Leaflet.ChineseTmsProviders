@@ -40,8 +40,7 @@ Current options suitable for tile layers are:
     * TianDiTu.Satellite
     * TianDiTu.Satellite.Annotion
 * MapABC
-    * MapABC.Normal
-    * MapABC.Satellite
+    * MapABC.Normal.Map (include Annotion)
 * GaoDe
     * GaoDe.Normal
     * GaoDe.Satellite
