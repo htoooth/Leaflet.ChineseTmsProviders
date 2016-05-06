@@ -33,13 +33,6 @@ L.TileLayer.ChinaProvider.providers = {
         Subdomains: ['0', '1', '2', '3', '4', '5', '6', '7']
     },
 
-    MapABC: {
-        Normal: {
-            Map: 'http://emap{s}.mapabc.com/mapabc/maptile?&x={x}&y={y}&z={z}'
-        },
-        Subdomains: ["0", "1", "2", "3"]
-    },
-
     GaoDe: {
         Normal: {
             Map: 'http://webrd0{s}.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scale=1&style=8&x={x}&y={y}&z={z}',
