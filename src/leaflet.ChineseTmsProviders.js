@@ -49,6 +49,26 @@ L.TileLayer.ChinaProvider.providers ={
             Annotion:'http://webst0{s}.is.autonavi.com/appmaptile?style=8&x={x}&y={y}&z={z}'
         },
         Subdomains:["1","2","3","4"]
+    },
+    
+    Google:{
+        Normal:{
+            Map:"http://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}'
+        }
+        Satellite:{
+            Map:"http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}'
+        }
+    },
+    
+    Geoq:{
+        Normal:{
+            ChinaOnlineStreetPurplishBlue:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}",
+            ChinaOnlineCommunity:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineCommunity/MapServer/tile/{z}/{y}/{x}",
+            ChinaOnlineStreetGray:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer/tile/{z}/{y}/{x}",
+            ChinaOnlineStreetWarm:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer/tile/{z}/{y}/{x}",
+            ChinaOnlineStreetColor:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetColor/MapServer/tile/{z}/{y}/{x}",
+            ChinaOnlineStreetCold:"http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetCold/MapServer/tile/{z}/{y}/{x}"
+        }
     }
 };
 
