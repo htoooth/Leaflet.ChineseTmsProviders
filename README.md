@@ -25,8 +25,10 @@ L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion',{maxZoom:18,minZoom:5}).add
 There are more examples at the examples folder like below.
 ```
 ./examples/indexTianDiTu.html
-./examples/indexMapABC.html
 ./examples/indexGaoDe.html
+./examples/indexGoogle.html
+./examples/indexGeoq.html
+
 ```
 All maps use Coordinate Reference Systems (CRS), which are EPSG:4326. Therefore, they are compatible with other international tile providers that are based on EPSG:4326 or EPSG:900913. So they can be used with other tile providers (e.g. googlemap, OpenStreetMap, OpenWeatherMap, etc.) that are using the same CRS (i.e. EPSG:4326 or EPSG:900913). 
 
@@ -49,12 +51,12 @@ Current options suitable for tile layers are:
     * Google.Normal.Map (include Annotion)
     * Google.Satellite.Map
 * Geoq
-    * Geoq.Normal.ChinaOnlineCommunity
-    * Geoq.Normal.ChinaOnlineStreetColor
-    * Geoq.Normal.ChinaOnlineStreetPurplishBlue
-    * Geoq.Normal.ChinaOnlineStreetGray
-    * Geoq.Normal.ChinaOnlineStreetWarm
-    * Geoq.Normal.ChinaOnlineStreetCold
+    * Geoq.Normal.Map
+    * Geoq.Normal.Color
+    * Geoq.Normal.PurplishBlue
+    * Geoq.Normal.Gray
+    * Geoq.Normal.Warm
+    * Geoq.Normal.Cold
 
 ## About
 
