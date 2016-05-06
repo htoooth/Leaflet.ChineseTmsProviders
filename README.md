@@ -47,6 +47,16 @@ Current options suitable for tile layers are:
     * GaoDe.Normal.Map (include Annotion)
     * GaoDe.Satellite.Map
     * GaoDe.Satellite.Annotion
+* Google
+    * Google.Normal.Map (include Annotion)
+    * Google.Satellite.Map
+* Geoq
+    * Geoq.Normal.ChinaOnlineCommunity
+    * Geoq.Normal.ChinaOnlineStreetColor
+    * Geoq.Normal.ChinaOnlineStreetPurplishBlue
+    * Geoq.Normal.ChinaOnlineStreetGray
+    * Geoq.Normal.ChinaOnlineStreetWarm
+    * Geoq.Normal.ChinaOnlineStreetCold
 
 ## About
 

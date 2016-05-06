@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../lib/leaflet.css">
+    <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html,
+    body,
+    #map {
+        height: 100%;
+    }
+    </style>
+    <script type="text/javascript" src="../lib/leaflet.js"></script>
+    <script type="text/javascript" src='../src/leaflet.ChineseTmsProviders.js'></script>
+</head>
+
+<body>
+    <div id='map'></div>
+</body>
+<script type="text/javascript">
+var normalm1 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineCommunity', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var normalm2 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineStreetColor', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var normalm3 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineStreetPurplishBlue', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var normalm4 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineStreetGray', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var normalm5 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineStreetWarm', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var normalm6 = L.tileLayer.chinaProvider('Geoq.Normal.ChinaOnlineStreetCold', {
+    maxZoom: 18,
+    minZoom: 5
+});
+
+var normal = L.layerGroup([normalm1, normalm2, normalm3, normalm4, normalm5, normalm6]);
+
+var baseLayers = {
+    "地图": normalm1,
+    "多彩": normalm2,
+    "午夜蓝": normalm3,
+    "灰色": normalm4,
+    "暖色": normalm5,
+    "冷色": normalm6
+}
+
+var map = L.map("map", {
+    center: [31.59, 120.29],
+    zoom: 12,
+    layers: [normalm1],
+    zoomControl: false
+});
+
+L.control.layers(baseLayers, null).addTo(map);
+L.control.zoom({
+    zoomInTitle: '放大',
+    zoomOutTitle: '缩小'
+}).addTo(map);
+</script>
+
+</html>

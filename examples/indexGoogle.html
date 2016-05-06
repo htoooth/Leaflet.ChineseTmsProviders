@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../lib/leaflet.css">
+    <style type="text/css">
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    html,
+    body,
+    #map {
+        height: 100%;
+    }
+    </style>
+    <script type="text/javascript" src="../lib/leaflet.js"></script>
+    <script type="text/javascript" src='../src/leaflet.ChineseTmsProviders.js'></script>
+</head>
+
+<body>
+    <div id='map'></div>
+</body>
+
+<script type="text/javascript">
+var normalMap = L.tileLayer.chinaProvider('Google.Normal.Map', {
+        maxZoom: 18,
+        minZoom: 5
+    }),
+    satelliteMap = L.tileLayer.chinaProvider('Google.Satellite.Map', {
+        maxZoom: 18,
+        minZoom: 5
+    });
+
+var baseLayers = {
+    "地图": normalMap,
+    "影像": satelliteMap,
+}
+
+var overlayLayers = {
+
+}
+
+var map = L.map("map", {
+    center: [31.59, 120.29],
+    zoom: 12,
+    layers: [normalMap],
+    zoomControl: false
+});
+
+L.control.layers(baseLayers, overlayLayers).addTo(map);
+L.control.zoom({
+    zoomInTitle: '放大',
+    zoomOutTitle: '缩小'
+}).addTo(map);
+</script>
+
+</html>

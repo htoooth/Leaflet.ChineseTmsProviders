@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -9,39 +10,54 @@
         padding: 0;
         margin: 0;
     }
-    html, body, #map {
+    
+    html,
+    body,
+    #map {
         height: 100%;
     }
-
     </style>
-    <script type="text/javascript" src="../lib/leaflet.js" ></script>
+    <script type="text/javascript" src="../lib/leaflet.js"></script>
     <script type="text/javascript" src='../src/leaflet.ChineseTmsProviders.js'></script>
 </head>
+
 <body>
-<div id='map'></div>
+    <div id='map'></div>
 </body>
 <script type="text/javascript">
-
-var normalm = L.tileLayer.chinaProvider('GaoDe.Normal.Map',{maxZoom:18,minZoom:5});
-var imgm = L.tileLayer.chinaProvider('GaoDe.Satellite.Map',{maxZoom:18,minZoom:5});
-var imga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion',{maxZoom:18,minZoom:5});
-
-var normal = L.layerGroup([normalm]),
-    image = L.layerGroup([imgm,imga]);
-
-var baseLayers = {
-    "地图":normal,
-    "影像":image,
-}
-
-var map = L.map("map",{
-    center:[31.59, 120.29],
-    zoom:12,
-    layers:[normal],
-    zoomControl:false
+var normalm = L.tileLayer.chinaProvider('GaoDe.Normal.Map', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var imgm = L.tileLayer.chinaProvider('GaoDe.Satellite.Map', {
+    maxZoom: 18,
+    minZoom: 5
+});
+var imga = L.tileLayer.chinaProvider('GaoDe.Satellite.Annotion', {
+    maxZoom: 18,
+    minZoom: 5
 });
 
-L.control.layers(baseLayers,null).addTo(map);
-L.control.zoom({zoomInTitle:'放大', zoomOutTitle:'缩小'}).addTo(map);
+var normal = L.layerGroup([normalm]),
+    image = L.layerGroup([imgm, imga]);
+
+var baseLayers = {
+    "地图": normal,
+    "影像": image,
+}
+
+var map = L.map("map", {
+    center: [31.59, 120.29],
+    zoom: 12,
+    layers: [normal],
+    zoomControl: false
+});
+
+L.control.layers(baseLayers, null).addTo(map);
+L.control.zoom({
+    zoomInTitle: '放大',
+    zoomOutTitle: '缩小'
+}).addTo(map);
 </script>
+
 </html>
