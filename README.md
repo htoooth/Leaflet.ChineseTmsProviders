@@ -29,8 +29,11 @@ L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion',{maxZoom:18,minZoom:5}).add
 There are more examples at the examples folder like below.
 
 [./examples/indexTianDiTu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexTianDiTu.html)
+
 [./examples/indexGaoDe.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGaoDe.html)
+
 [./examples/indexGoogle.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGoogle.html)
+
 [./examples/indexGeoq.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGeoq.html)
 
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
