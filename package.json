@@ -1,0 +1,30 @@
+{
+  "name": "leaflet.chinesetmsproviders",
+  "version": "2.0.0",
+  "description": "An extension to Leaflet that contains configurations for various Chinese tile providers.",
+  "main": "src/leaflet.ChineseTmsProviders.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htoooth/Leaflet.ChineseTmsProviders.git"
+  },
+  "keywords": [
+    "leaflet",
+    "plugin",
+    "china",
+    "tms",
+    "providers"
+  ],
+  "author": "htoooth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htoooth/Leaflet.ChineseTmsProviders/issues"
+  },
+  "homepage": "https://github.com/htoooth/Leaflet.ChineseTmsProviders#readme"
+}
