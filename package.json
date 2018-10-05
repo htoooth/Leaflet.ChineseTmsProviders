@@ -1,5 +1,5 @@
 {
-  "name": "leaflet.chinesetmsproviders",
+  "name": "leaflet.chinatmsproviders",
   "version": "2.0.0",
   "description": "An extension to Leaflet that contains configurations for various Chinese tile providers.",
   "main": "src/leaflet.ChineseTmsProviders.js",

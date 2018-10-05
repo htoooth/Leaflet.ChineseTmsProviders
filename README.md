@@ -4,6 +4,10 @@ An extension to [Leaflet](http://leafletjs.com/) that contains configurations fo
 
 ## Usage
 
+```bash
+npm i leaflet.chinatmsproviders
+```
+
 Leaflet-ChineseTmsProviders [providers](#providers) are refered to with a `provider.<variant>.<type>` -string. Let's say you want to add the nice `Normal.Map` base layers from `www.tianditu.com` to your map, you pass `TianDiTu.Normal.Map` to the `L.tileLayer.chinaProvider`-constructor, which will return a `L.TileLayer` instance for TianDiTu Normal Map tile layer.
 ```Javascript
 //add TianDiTu Normal Map Layer to map.
