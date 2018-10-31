@@ -60,11 +60,20 @@ L.TileLayer.ChinaProvider.providers = {
             PurplishBlue: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}",
             Gray: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer/tile/{z}/{y}/{x}",
             Warm: "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetWarm/MapServer/tile/{z}/{y}/{x}",
+        },
+        Theme: {
             Hydro: "http://thematic.geoq.cn/arcgis/rest/services/ThematicMaps/WorldHydroMap/MapServer/tile/{z}/{y}/{x}"
         },
         Subdomains: []
+    },
 
+    OSM: {
+        Normal: {
+            Map: "http://{s}.tile.osm.org/{z}/{x}/{y}.png",
+        },
+        Subdomains: ['a', 'b', 'c']
     }
+
 };
 
 L.tileLayer.chinaProvider = function(type, options) {

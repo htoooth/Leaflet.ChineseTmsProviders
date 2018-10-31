@@ -36,6 +36,8 @@ There are more examples at the examples folder like below.
 
 [./examples/indexGeoq.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGeoq.html)
 
+[./examples/indexOSM.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexOSM.html)
+
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
 
 <a name="providers"></a>
@@ -62,6 +64,8 @@ Current options suitable for tile layers are:
     * Geoq.Normal.Gray
     * Geoq.Normal.Warm
     * Geoq.Normal.Hydro
+* OSM
+    * OSM.Normal.Map
 
 ## About
 
