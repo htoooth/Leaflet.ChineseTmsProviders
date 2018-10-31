@@ -58,11 +58,10 @@ Current options suitable for tile layers are:
     * Google.Satellite.Map
 * Geoq
     * Geoq.Normal.Map
-    * Geoq.Normal.Color
     * Geoq.Normal.PurplishBlue
     * Geoq.Normal.Gray
     * Geoq.Normal.Warm
-    * Geoq.Normal.Cold
+    * Geoq.Normal.Hydro
 
 ## About
 
