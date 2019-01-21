@@ -11,7 +11,7 @@ L.TileLayer.ChinaProvider = L.TileLayer.extend({
 
         var url = providers[providerName][mapName][mapType];
         options.subdomains = providers[providerName].Subdomains;
-
+        options.key = options.key || providers[providerName].key;
         L.TileLayer.prototype.initialize.call(this, url, options);
     }
 });
@@ -19,18 +19,19 @@ L.TileLayer.ChinaProvider = L.TileLayer.extend({
 L.TileLayer.ChinaProvider.providers = {
     TianDiTu: {
         Normal: {
-            Map: "http://t{s}.tianditu.cn/DataServer?T=vec_w&X={x}&Y={y}&L={z}",
-            Annotion: "http://t{s}.tianditu.cn/DataServer?T=cva_w&X={x}&Y={y}&L={z}"
+            Map: "http://t{s}.tianditu.com/DataServer?T=vec_w&X={x}&Y={y}&L={z}&tk={key}",
+            Annotion: "http://t{s}.tianditu.com/DataServer?T=cva_w&X={x}&Y={y}&L={z}&tk={key}"
         },
         Satellite: {
-            Map: "http://t{s}.tianditu.cn/DataServer?T=img_w&X={x}&Y={y}&L={z}",
-            Annotion: "http://t{s}.tianditu.cn/DataServer?T=cia_w&X={x}&Y={y}&L={z}"
+            Map: "http://t{s}.tianditu.com/DataServer?T=img_w&X={x}&Y={y}&L={z}&tk={key}",
+            Annotion: "http://t{s}.tianditu.com/DataServer?T=cia_w&X={x}&Y={y}&L={z}&tk={key}"
         },
         Terrain: {
-            Map: "http://t{s}.tianditu.cn/DataServer?T=ter_w&X={x}&Y={y}&L={z}",
-            Annotion: "http://t{s}.tianditu.cn/DataServer?T=cta_w&X={x}&Y={y}&L={z}"
+            Map: "http://t{s}.tianditu.com/DataServer?T=ter_w&X={x}&Y={y}&L={z}&tk={key}",
+            Annotion: "http://t{s}.tianditu.com/DataServer?T=cta_w&X={x}&Y={y}&L={z}&tk={key}"
         },
-        Subdomains: ['0', '1', '2', '3', '4', '5', '6', '7']
+        Subdomains: ['0', '1', '2', '3', '4', '5', '6', '7'],
+        key: "174705aebfe31b79b3587279e211cb9a"
     },
 
     GaoDe: {
