@@ -29,36 +29,31 @@ var normalm1 = L.tileLayer.chinaProvider('Geoq.Normal.Map', {
     maxZoom: 18,
     minZoom: 5
 });
-var normalm2 = L.tileLayer.chinaProvider('Geoq.Normal.Color', {
+var normalm2 = L.tileLayer.chinaProvider('Geoq.Normal.PurplishBlue', {
     maxZoom: 18,
     minZoom: 5
 });
-var normalm3 = L.tileLayer.chinaProvider('Geoq.Normal.PurplishBlue', {
+var normalm3 = L.tileLayer.chinaProvider('Geoq.Normal.Gray', {
     maxZoom: 18,
     minZoom: 5
 });
-var normalm4 = L.tileLayer.chinaProvider('Geoq.Normal.Gray', {
+var normalm4 = L.tileLayer.chinaProvider('Geoq.Normal.Warm', {
     maxZoom: 18,
     minZoom: 5
 });
-var normalm5 = L.tileLayer.chinaProvider('Geoq.Normal.Warm', {
-    maxZoom: 18,
-    minZoom: 5
-});
-var normalm6 = L.tileLayer.chinaProvider('Geoq.Normal.Cold', {
+var normalm5 = L.tileLayer.chinaProvider('Geoq.Theme.Hydro', {
     maxZoom: 18,
     minZoom: 5
 });
 
-var normal = L.layerGroup([normalm1, normalm2, normalm3, normalm4, normalm5, normalm6]);
+var normal = L.layerGroup([normalm1, normalm2, normalm3, normalm4, normalm5]);
 
 var baseLayers = {
     "地图": normalm1,
-    "多彩": normalm2,
-    "午夜蓝": normalm3,
-    "灰色": normalm4,
-    "暖色": normalm5,
-    "冷色": normalm6
+    "午夜蓝": normalm2,
+    "灰色": normalm3,
+    "暖色": normalm4,
+    "水系": normalm5
 }
 
 var map = L.map("map", {
