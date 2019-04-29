@@ -67,6 +67,24 @@ Current options suitable for tile layers are:
 * OSM
     * OSM.Normal.Map
 
+## Options
+
+### key
+
+If you're using TianDiTu, please [apply the key](http://lbs.tianditu.gov.cn/) and config it in the option, like this:
+
+```js
+L.tileLayer.chinaProvider(
+    'TianDiTu.Normal.Map',
+    {
+        key: 'Your key',
+        maxZoom:18,
+        minZoom:5,
+    }).addTo(map);
+```
+
+I added a key to the source code, but this key should **only** be used for testing.
+
 ## About
 
 This work was inspired from <https://github.com/tontita/Leaflet.KoreanTmsProviders>, and <https://github.com/leaflet-extras/leaflet-providers>.
