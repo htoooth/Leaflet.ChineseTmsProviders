@@ -38,6 +38,8 @@ There are more examples at the examples folder like below.
 
 [./examples/indexOSM.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexOSM.html)
 
+[./examples/indexBaidu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
 
 <a name="providers"></a>
@@ -57,7 +59,8 @@ Current options suitable for tile layers are:
     * GaoDe.Satellite.Annotion
 * Google
     * Google.Normal.Map (include Annotion)
-    * Google.Satellite.Map
+    * Google.Satellite.Map (exclude Annotion)
+    * Google.Satellite.Map (include Annotion)
 * Geoq
     * Geoq.Normal.Map
     * Geoq.Normal.PurplishBlue
@@ -66,6 +69,10 @@ Current options suitable for tile layers are:
     * Geoq.Normal.Hydro
 * OSM
     * OSM.Normal.Map
+* Baidu
+    * Baidu.Normal.Map
+    * Baidu.Satellite.Map (exclude Annotion)
+    * Baidu.Satellite.Annotion
 
 ## Options
 
@@ -87,4 +94,4 @@ I added a key to the source code, but this key should **only** be used for testi
 
 ## About
 
-This work was inspired from <https://github.com/tontita/Leaflet.KoreanTmsProviders>, and <https://github.com/leaflet-extras/leaflet-providers>.
+This work was inspired from <https://github.com/tontita/Leaflet.KoreanTmsProviders>, <https://github.com/leaflet-extras/leaflet-providers>, and <https://github.com/muyao1987/leaflet-tileLayer-baidugaode>.
