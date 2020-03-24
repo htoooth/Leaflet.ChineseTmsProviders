@@ -92,6 +92,10 @@ L.tileLayer.chinaProvider(
 
 I added a key to the source code, but this key should **only** be used for testing.
 
+## Please note
+
+If you want to use Baidu provider，please install [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) in your project.
+
 ## About
 
 This work was inspired from <https://github.com/tontita/Leaflet.KoreanTmsProviders>, <https://github.com/leaflet-extras/leaflet-providers>, and <https://github.com/muyao1987/leaflet-tileLayer-baidugaode>.
