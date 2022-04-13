@@ -38,7 +38,28 @@ L.TileLayer.ChinaProvider = L.TileLayer.extend({
         }
 
         L.TileLayer.prototype.initialize.call(this, url, options);
-    }
+    },
+
+    getTileUrl: function (coords) {
+		var data = {
+			s: this._getSubdomain(coords),
+			x: coords.x,
+			y: coords.y,
+			z: this._getZoomForUrl(),
+		};
+		if (this._map && !this._map.options.crs.infinite) {
+			var invertedY = this._globalTileRange.max.y - coords.y;
+			if (this.options.tms) {
+				data['y'] = invertedY;
+			}
+			data['-y'] = invertedY;
+		}
+
+        data.sx = data.x >> 4
+        data.sy = (( 1 << data.z) - data.y) >> 4
+
+		return L.Util.template(this._url, L.Util.extend(data, this.options));
+	},
 });
 
 L.TileLayer.ChinaProvider.providers = {
@@ -111,6 +132,19 @@ L.TileLayer.ChinaProvider.providers = {
         },
         Subdomains: '0123456789',
         tms: true
+    },
+
+    Tencent: {
+        Normal: {
+            Map: "//rt{s}.map.gtimg.com/tile?z={z}&x={x}&y={-y}&type=vector&styleid=3",
+        },
+        Satellite: {
+            Map: "//p{s}.map.gtimg.com/sateTiles/{z}/{sx}/{sy}/{x}_{-y}.jpg",
+        },
+        Terrain: {
+            Map: "//p{s}.map.gtimg.com/demTiles/{z}/{sx}/{sy}/{x}_{-y}.jpg"
+        },
+        Subdomains: '0123',
     }
 
 };

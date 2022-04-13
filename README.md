@@ -40,6 +40,7 @@ There are more examples at the examples folder like below.
 
 [./examples/indexBaidu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
 
+[./examples/indexTencent.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
 
 <a name="providers"></a>
@@ -73,6 +74,10 @@ Current options suitable for tile layers are:
     * Baidu.Normal.Map
     * Baidu.Satellite.Map (exclude Annotion)
     * Baidu.Satellite.Annotion
+* Tencent
+    * Tencent.Normal.Map
+    * Tencent.Satellite.Map
+    * Tencent.Terrain.Map
 
 ## Options
 
