@@ -40,7 +40,7 @@ There are more examples at the examples folder like below.
 
 [./examples/indexBaidu.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
 
-[./examples/indexTencent.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+[./examples/indexTencent.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexTencent.html)
 
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
 
