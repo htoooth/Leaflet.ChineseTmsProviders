@@ -28,19 +28,20 @@ L.tileLayer.chinaProvider('TianDiTu.Normal.Annotion',{maxZoom:18,minZoom:5}).add
 ```
 There are more examples at the examples folder like below.
 
-[./examples/indexTianDiTu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexTianDiTu.html)
+[./examples/indexTianDiTu.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexTianDiTu.html)
 
-[./examples/indexGaoDe.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGaoDe.html)
+[./examples/indexGaoDe.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGaoDe.html)
 
-[./examples/indexGoogle.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGoogle.html)
+[./examples/indexGoogle.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGoogle.html)
 
-[./examples/indexGeoq.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGeoq.html)
+[./examples/indexGeoq.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexGeoq.html)
 
-[./examples/indexOSM.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexOSM.html)
+[./examples/indexOSM.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexOSM.html)
 
-[./examples/indexBaidu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+[./examples/indexBaidu.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
 
-[./examples/indexTencent.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+[./examples/indexTencent.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+
 Above all maps use Coordinate Reference Systems (CRS), which are EPSG:3857. 
 
 <a name="providers"></a>
