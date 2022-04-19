@@ -38,7 +38,7 @@ There are more examples at the examples folder like below.
 
 [./examples/indexOSM.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexOSM.html)
 
-[./examples/indexBaidu.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
+[./examples/indexBaidu.html](http://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexBaidu.html)
 
 [./examples/indexTencent.html](https://htoooth.github.io/Leaflet.ChineseTmsProviders/examples/indexTencent.html)
 
